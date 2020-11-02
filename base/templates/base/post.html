@@ -1,0 +1,33 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+<style type="text/css">
+	img{
+		max-width: 100%;
+		object-fit: cover;
+	}
+
+	.featured_image{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+</style>
+
+<div class="main-container">
+	<h1>{{post.headline}}</h1>
+	<h4>{{post.sub_headline}}</h4>
+	<hr>
+	{% for tag in post.tags.all %}
+		<span class="tag">{{tag}}</span>
+	{% endfor %}
+	<br>
+
+	<p>
+		<img class="featured_image" src="{{post.thumbnail.url}}">
+	{{post.body|safe}}</p>
+
+	<a class="btn btn-sm btn-primary" href="{% url 'posts' %}">Back to projects</a>
+</div>
+
+{% endblock content %}
