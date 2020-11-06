@@ -1,4 +1,3 @@
-
 GETTING STARTED
 
 Open CMD or Terminal
@@ -16,5 +15,7 @@ Step 4 - Runserver on your local port
     python manage.py runserver
     copy and paste http://127.0.0.1:8000/ on the web browser
 
-    
-    
+My intention of this project is to keep track of my accomplishments and projects
+and improve accessibility for job interviewers or cilents. 
+
+Thank you!
